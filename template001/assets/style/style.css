@@ -10,20 +10,29 @@
     overflow-x: hidden;
 }
 
-header, section {
-    width: 93vw;
-    margin: 70px;
+header {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-header {
-    margin-right: 70px;
+section {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 nav {
+    width: 85vw;
     display: flex;
     justify-content: space-between;
-    margin-left: 70px;
-    margin-right: 70px;
 }
 
 nav a {
@@ -36,25 +45,43 @@ nav a:hover {
     text-decoration: underline;
 }
 
-section {
-    height: 700px;
-}
-
 main {
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-right: 70px;
 }
 
-.text-main {
-    padding-top: 70px;
+.text {
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 60%;
 }
 
-.text-main, .text-footer {
-    padding-left: 70px;
-    padding-right: 70px;
+.principal {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-family: var(--font-text);
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: var(--font-text);
+}
+
+
+.principal {
+    max-width: 450px;
+    font-size: 3em;
+}
+
+.description {
+    max-width: 660px;    
+    font-size: 1.3em;
+    color: gray;
 }
 
 .text-main button {
@@ -64,39 +91,15 @@ main {
     margin-bottom: 30px;
 }
 
-aside {
-    width: 70%;
-}
-
-aside {
-    margin-right: 70px;
-}
-
-.principal, .description {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: var(--font-text);
-}
-
-.principal {
-    max-width: 450px;
-    font-size: 3em;
-}
-
-.description {
-    font-size: 1.3em;
-    color: gray;
-}
-
 .text-footer button {
-
+    
     border: 0;
     width: 150px;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 30px;
     background-color: var(--color);
-
+    
     color: white;
     font-weight: bold;
     font-size: 0.9rem;
@@ -113,6 +116,10 @@ aside {
     font-family: var(--font-text);
 }
 
+aside {
+    width: 40%;
+}
+
 .img {
     display: flex;
     justify-content: center;
@@ -123,6 +130,7 @@ aside {
 }
 
 .user-pfp {
-    margin-top: 2px;
     margin-left: 10px;
+    padding: 2px;
+    display: flex;
 }

@@ -1,0 +1,147 @@
+/*
+Telas menores: @media screen and (max-width: 600px)
+Celulares: @media screen and (min-width: 600px) and (max-width: 768px)
+Tablet: @media screen and (min-width: 768px) and (max-width: 992px)
+Desktop: @media screen and (min-width: 992px and (max-width: 1200px)
+Telas grandes: @media screen and (min-width: 1200px)
+*/
+
+/* TELAS MENORES */
+
+@media screen and (max-width: 600px) {
+
+    * {
+        overflow-y: hidden;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside {
+        order: -1;
+        min-height: 25vh;
+        margin-bottom: 10px;
+    }
+
+    .img {
+        margin-bottom: 120px;
+    }
+
+    .principal {
+        font-size: 1.4em;
+        max-width: 300px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .description {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .text {
+        width: 70vw;
+        height: 100vh;
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-main button {
+        width: 200px;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .text-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* CELULAR */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+
+    header {
+        height: 10vh;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside {
+        order: -1;
+        height: 520px;
+        margin-bottom: 10px;
+    }
+
+    .principal {
+        font-size: 1.4em;
+        max-width: 300px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .description {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .text {
+        width: 70vw;
+        height: 100vh;
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-main button {
+        margin-bottom: 20px;
+        width: 200px;
+        align-self: center;
+    }
+
+    .text-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
