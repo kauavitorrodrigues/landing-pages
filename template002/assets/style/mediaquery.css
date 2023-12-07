@@ -10,12 +10,28 @@ Telas grandes: @media screen and (min-width: 1200px)
 
 @media screen and (max-width: 600px) {
 
+    nav ul {
+        justify-content: center;
+    }
 
-}
+    .logo-and-search, .other-infos  {
+        max-width: 90%;
+    }
 
-/* CELULAR */
+    .keyboard {
+        display: none;
+    }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+    .interact img {
+        max-width: 25%;
+    }
 
+    .other-infos button {
+        padding: 10px;
+    }
+
+    footer {
+        display: none;
+    }
 
 }
