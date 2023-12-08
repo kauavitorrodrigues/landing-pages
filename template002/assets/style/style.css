@@ -1,17 +1,3 @@
-:root {
-    --text-font: 'Hedvig Letters Sans', sans-serif;
-    --text-color: rgb(83, 83, 83);
-    --input-color: #cacaca;
-    --hover-color: #b8b7b7;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: var(--text-font);
-}
-
 header {
     width: 100vw;
     min-height: 5vh;

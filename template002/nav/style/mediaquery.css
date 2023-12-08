@@ -1,0 +1,83 @@
+/*
+Telas menores: @media screen and (max-width: 600px)
+Celulares: @media screen and (min-width: 600px) and (max-width: 768px)
+Tablet: @media screen and (min-width: 768px) and (max-width: 992px)
+Desktop: @media screen and (min-width: 992px and (max-width: 1200px)
+Telas grandes: @media screen and (min-width: 1200px)
+*/
+
+/* TELAS MENORES */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        background-color: aquamarine;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .align {
+        width: 90%;
+    }
+
+    .logo-search {
+        width: 100%;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    footer {
+        height: 20vh;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    .buttons {
+        width: 25%;
+    }
+
+    .logo-search {
+        width: 75%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .related-data1 {
+        width: 40%;
+    }
+    
+    .related-data-2 {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .buttons {
+        width: 25%;
+    }
+
+    .logo-search {
+        width: 75%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .related-data1 {
+        width: 40%;
+    }
+    
+    .related-data-2 {
+        width: 40%;
+    }
+}
