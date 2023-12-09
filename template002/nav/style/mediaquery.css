@@ -8,76 +8,209 @@ Telas grandes: @media screen and (min-width: 1200px)
 
 /* TELAS MENORES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
+
+    header {
+        max-height: 17vh;
+    }
 
     .container {
-        background-color: aquamarine;
         width: 100%;
-        display: flex;
-        flex-direction: column;
         margin-left: 20px;
     }
 
     .align {
-        width: 90%;
+        width: 100%;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .logo-search {
         width: 100%;
+        height: 100%;
+        flex-direction: column;
     }
 
+    .search-input {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .icons img {
+        margin-right: 2px;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .icon2 {
+        display: none;
+    }
+    
     .buttons {
         display: none;
     }
 
+    .navigation {
+        display: none;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .result-card {
+        max-width: 90%;
+    }
+
+    .primary {
+        font-size: 1.2rem;
+    }
+
+    .result-card p {
+        font-size: 0.8em;
+    }
+
+    .related-data {
+        max-width: 100%;    
+        display: flex;
+    }
+
     footer {
-        height: 20vh;
+        height: 25vh;
     }
     
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .align {
+        width: 100%;
+    }
 
     .buttons {
-        width: 25%;
+        width: 20%;
+        display: flex;
+        align-items: center;
     }
 
     .logo-search {
-        width: 75%;
+        width: 60%;
+        height: 100%;
+    }
+
+    .search-input {
+        width: 70%;
+        height: 32%;
+        margin-top: 10px;
+    }
+
+    .icons img {
+        margin-right: 2px;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .icon2 {
+        display: none;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .result-card {
+        max-width: 90%;
+    }
+
+    .primary {
+        font-size: 1.2rem;
+    }
+
+    .result-card p {
+        font-size: 0.8em;
+    }
+
+    .related-data {
+        max-width: 100%;    
+        display: flex;
     }
 
     footer {
-        justify-content: center;
-    }
-
-    .related-data1 {
-        width: 40%;
-    }
-    
-    .related-data-2 {
-        width: 40%;
+        height: 25vh;
     }
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .align {
+        width: 100%;
+    }
+
     .buttons {
-        width: 25%;
+        width: 20%;
+        display: flex;
+        align-items: center;
     }
 
     .logo-search {
-        width: 75%;
+        width: 60%;
+        height: 100%;
+    }
+
+    .search-input {
+        width: 70%;
+        height: 32%;
+        margin-top: 10px;
+    }
+
+    .icons img {
+        margin-right: 2px;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .icon2 {
+        display: none;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .result-card {
+        max-width: 90%;
+    }
+
+    .primary {
+        font-size: 1.2rem;
+    }
+
+    .result-card p {
+        font-size: 0.8em;
     }
 
     footer {
-        justify-content: center;
+        height: 25vh;
     }
 
-    .related-data1 {
-        width: 40%;
-    }
-    
-    .related-data-2 {
-        width: 40%;
-    }
 }
