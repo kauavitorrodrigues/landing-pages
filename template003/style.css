@@ -5,7 +5,32 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-div {
+.tarja {
+    background-color: antiquewhite;
+    position: absolute;
+    left: -80px;
+    top: 25px;
+    width: 310px;
+    height: 100px;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarja a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    border: 1px solid rgb(128, 128, 128);
+    height: 80%;
+    width: 100%;
+}
+
+.tabela {
     height: 100vh;
     display: flex;
     flex-direction: column;
