@@ -2,10 +2,13 @@
 
     --base-color: #B28756;
     --button-hover-color: #886843;
-    --hover-color: lightgrey;
+    --hover-color: #d3d3d3;
+    --border-color: #333;
 
-    --default-color: white;
-    --default-color-2:black;
+    --light-background-color: #F7F7F7; 
+
+    --default-color: #ffffff;
+    --default-color-2:#000000;
     --filter-color: rgba(0, 0, 0, 0.8);
 
 }
@@ -15,6 +18,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+
+/* LAYOUT PADRÃO */
+
+body {
+    overflow-x: hidden;
 }
 
 header {
@@ -31,6 +41,8 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+/* ------------------------------------------------------ */
 
 .logo {
     width: 100px;
@@ -60,7 +72,7 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 
     display: flex;
     align-items: center;
@@ -70,11 +82,13 @@ nav ul li a {
 }
 
 nav ul li a:hover, 
-nav .active a{
+nav .active a {
     color: var(--hover-color);
     transition-duration: .5s;
     border-bottom: 5px solid var(--base-color);
 }
+
+/* ------------------------------------------------------ */
 
 .banner {
     height: calc(100vh - 100px);
@@ -103,9 +117,11 @@ nav .active a{
     color: var(--default-color);
 }
 
+/* ------------------------------------------------------ */
+
 .banner h1 {
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.5em;
 }
 
 .banner h1 span {
@@ -114,14 +130,15 @@ nav .active a{
 
 .banner p {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-transform: uppercase;
 
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.banner a {
+.banner a,
+.button {
     display: block;
     text-align: center;
 
@@ -131,12 +148,14 @@ nav .active a{
 
     background-color: var(--base-color);
     color: var(--default-color);
-    font-size: .8rem;
+    font-size: .8em;
     font-weight: 600;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-.banner a:hover {
+.banner a:hover,
+.button:hover {
     background-color: var(--button-hover-color);
     transition-duration: .5s;
 }
@@ -163,4 +182,118 @@ nav .active a{
 
 .banner .pointer.active {
     background-color: var(--base-color);
+}
+
+/* ------------------------------------------------------ */
+
+section.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.default .section-title {
+    font-size: 2em;
+}
+
+.default .section-desc {
+    font-size: 1em;
+    color: var(--hover-color);
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+}
+
+/* ------------------------------------------------------ */
+
+.light {
+    background-color: var(--default-color);
+}
+
+.light .section-title,
+.light .section-body {
+    color: var(--default-color-2);
+}
+
+.dark {
+    background-color: var(--default-color-2);
+}
+
+.dark .section-title,
+.dark .section-body {
+    color: var(--default-color);
+}
+
+/* ------------------------------------------------------ */
+
+
+                  /* ÁREAS ESPECÍFICAS */
+                
+
+/* ------------------------------------------------------ */
+
+.section-about_us {
+    display: flex;
+}
+
+.section-about_us--left {
+    flex: 1;
+}
+
+.section-about_us--left p {
+    line-height: 1.8;
+}
+
+.section-about_us--right {
+    width: 520px;
+}
+
+.section-about_us--right img {
+    width: 480px;
+    text-align: center;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------ */
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.section-service:nth-child(1) {
+    border-left: 1px solid var(--border-color);
+}
+
+.section-service h3 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1,3em;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--hover-color);
 }
