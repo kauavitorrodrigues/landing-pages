@@ -10,6 +10,7 @@
     --default-color: #ffffff;
     --default-color-2:#000000;
     --filter-color: rgba(0, 0, 0, 0.8);
+    --filter-color2:rgba(0, 0, 0, 0.5);
 
 }
 
@@ -296,4 +297,97 @@ section.default {
     margin-top: 10px;
     font-size: 0.9em;
     color: var(--hover-color);
+}
+
+/* ------------------------------------------------------ */
+
+.section-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Mudança para a direção da coluna */
+    align-items: center; /* Centralizar itens na direção da coluna */
+}
+
+.section-project-filters {
+    background-color: var(--light-background-color);
+    border: 1px solid var(--hover-color);
+    display: inline-block;
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.section-project-filters ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    font-weight: 600;
+    font-size: .8em;
+    padding: 15px;
+    
+    color: var(--border-color);
+    border-right: 1px solid var(--hover-color);
+    border-bottom: 3px solid var(--light-background-color);
+}
+
+.section-project-filters ul li:nth-child(6) {
+    border-right:0;
+}
+
+.section-project-filters ul li:hover,
+.section-project-filters ul li.active {
+    transition-duration: .5s;
+    border-bottom: 3px solid var(--base-color);
+}
+
+.section-project-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-project-photo {
+    width: 280px;
+}
+.section-projects-photo-area {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects-photo-area img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects-photo-info {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--default-color);
+    
+    background-color: var(--filter-color2);
+}
+
+.section-projects-photo-info h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.section-projects-photo-area:hover .section-projects-photo-info {
+    display: flex;
+}
+
+.section-projects-photo-info.active {
+    display: flex;
 }
