@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: 1px solid black;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
