@@ -4,9 +4,11 @@
     --button-hover-color: #886843;
     --hover-color: #d3d3d3;
     --border-color: #333;
-    --border-color2: #CFCFCF;
+    --border-color2: #cfcfcf;
+    --tittle-color: #7E7E7E;
 
-    --light-background-color: #F7F7F7; 
+    --light-background-color: #F7F7F7;
+    --light-bg-color:#EDEDED; 
 
     --default-color: #ffffff;
     --default-color-2:#000000;
@@ -201,12 +203,12 @@ section.default {
 }
 
 .default .section-title {
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 .default .section-desc {
-    font-size: 1em;
-    color: var(--hover-color);
+    font-size: .9em;
+    color: var(--tittle-color);
     margin-top: 15px;
     margin-bottom: 40px;
 }
@@ -219,12 +221,13 @@ section.default {
 /* ------------------------------------------------------ */
 
 .light {
-    background-color: var(--default-color);
+    background-color: var(--light-bg-color);
 }
 
 .light .section-title,
 .light .section-body {
     color: var(--default-color-2);
+    font-weight: bold;
 }
 
 .dark {
@@ -525,7 +528,7 @@ section.default.dark.bg-team {
     width: 850px;
     height: 100%;
     display: inline-block;
-    background-color: var(--default-color);
+    background-color: var(--light-bg-color);
 }
 
 .section-happy-clients .slide-area {
@@ -625,6 +628,112 @@ section.default.dark.bg-team {
 
 .section-images-img img:nth-child(1) {
     margin-left: 0;
+}
+
+/* --------------------------------------------------------------------- */
+
+.section-prices-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    height: auto;
+}
+
+.section-prices-card {
+    background-color: #ffffff;
+    width: 250px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 30px -22px var(--border-color);
+}
+
+.section-prices-card:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+    box-shadow: 0px 10px 35px -22px var(--border-color);
+}
+
+.section-prices-card:nth-child(1) {
+    margin: 0;
+}
+
+.section-prices-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.section-prices-card-name {
+   margin-bottom: 20px;
+}
+
+.section-prices-card-name h5,
+.section-prices-card-name p {
+    text-align: center;
+}
+
+.section-prices-card-name h5{
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--border-color);
+    font-weight: bold;
+}
+
+.section-prices-card-name p {
+    font-size: .9em;
+    font-weight: bold;
+    color: var(--border-color2);
+}
+
+.section-prices-card-name p.price {
+    font-size: 2em;
+    color: var(--border-color); 
+    margin-top: 20px;   
+}
+
+.section-prices-card-benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-prices-card-benefits ul li {
+    list-style-type: none;
+    text-align: center;
+    color: var(--border-color);
+    font-size: .7em;
+    font-weight: 600;
+}
+
+.section-prices-card-benefits ul li p {
+    width: 10px;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--border-color);
+}
+
+.price-button{
+    margin-top: 25px;
+    padding: 20px 50px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--default-color);
+    background-color: var(--border-color);
+}
+
+.price-button:hover {
+    background-color: var(--base-color);
+    transition-duration: .5s;
 }
 
 /* --------------------------------------------------------------------- */
