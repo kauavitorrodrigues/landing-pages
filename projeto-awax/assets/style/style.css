@@ -391,3 +391,110 @@ section.default {
 .section-projects-photo-info.active {
     display: flex;
 }
+
+/* ------------------------------------------------------ */
+
+
+section.default.dark.bg-team {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: var(--border-color) url(/media/bg.jpg) no-repeat center;
+}
+
+.section-team-area {
+    background-color: var(--filter-color);
+    padding: 50px 0px;
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: var(--default-color);
+    margin-right: 20px;
+}
+
+.section-team .slide-area {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-color-2);
+}
+
+.section-team-area .sliders-pointers {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.section-team-area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--base-color);
+    border-radius: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.section-team .pointer.active {
+    background-color: var(--base-color);
+}
+
+.section-team-avatar {
+    width: 150px;
+    height: auto;
+}
+
+.section-team-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+.section-team-role {
+    font-weight: 600;
+    font-size: .8em;
+    margin-top: 5px;
+    color: var(--border-color);
+}
+
+.section-team-social {
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 13px;
+    background-color: var(--hover-color);
+}
+
+.section-team-social a:hover {
+    background-color: var(--base-color);
+    transition-duration: .5s;
+}
+
+/* ------------------------------------------------------ */
