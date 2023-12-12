@@ -498,3 +498,92 @@ section.default.dark.bg-team {
 }
 
 /* ------------------------------------------------------ */
+
+.section-happy-clients {
+    overflow: hidden;
+    max-width: 850px;
+    margin: auto;
+}
+
+.section-happy-clients .sliders {
+    width: 400vw;
+    height: 100%;
+}
+
+.section-happy-clients .slide {
+    width: 850px;
+    height: 100%;
+    display: inline-block;
+    background-color: var(--default-color);
+}
+
+.section-happy-clients .slide-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-color-2);
+}
+
+.happy-client-avatar {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 130px;
+}
+
+.happy-client-name {
+    margin-bottom: 10px;
+}
+
+.happy-client-name h5 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--default-color-2);
+}
+
+.happy-client-role {
+    margin-bottom: 30px;
+}
+
+.happy-client-role p {
+    font-size: .9em;
+    color: var(--default-color-2);
+    font-weight: 600;
+
+}
+
+.happy-client-testimony-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.happy-client-testimony-info img {
+    margin: 0px 0px 15px 0px;
+}
+
+.happy-client-testimony-info p {
+    color: var(--border-color);
+    text-align: center;
+}
+
+.section-happy-clients .sliders-pointers {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.section-happy-clients .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--base-color);
+    border-radius: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.section-happy-clients .pointer.active {
+    background-color: var(--base-color);
+}
