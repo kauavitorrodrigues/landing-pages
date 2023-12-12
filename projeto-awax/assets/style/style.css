@@ -4,6 +4,7 @@
     --button-hover-color: #886843;
     --hover-color: #d3d3d3;
     --border-color: #333;
+    --border-color2: #CFCFCF;
 
     --light-background-color: #F7F7F7; 
 
@@ -243,6 +244,8 @@ section.default {
 
 /* ------------------------------------------------------ */
 
+/* -------------------------SECTION ABOUT US----------------------------- */
+
 .section-about_us {
     display: flex;
 }
@@ -270,7 +273,9 @@ section.default {
     margin-top: 20px;
 }
 
-/* ------------------------------------------------------ */
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION SERVICES----------------------------- */
 
 .section-services {
     display: flex;
@@ -299,7 +304,9 @@ section.default {
     color: var(--hover-color);
 }
 
-/* ------------------------------------------------------ */
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION PROJECTS----------------------------- */
 
 .section-projects {
     display: flex;
@@ -392,7 +399,9 @@ section.default {
     display: flex;
 }
 
-/* ------------------------------------------------------ */
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION TEAM----------------------------- */
 
 
 section.default.dark.bg-team {
@@ -497,7 +506,9 @@ section.default.dark.bg-team {
     transition-duration: .5s;
 }
 
-/* ------------------------------------------------------ */
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION HAPPY CLIENTS----------------------------- */
 
 .section-happy-clients {
     overflow: hidden;
@@ -587,3 +598,33 @@ section.default.dark.bg-team {
 .section-happy-clients .pointer.active {
     background-color: var(--base-color);
 }
+
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION IMAGES----------------------------- */
+
+.bg-images {
+    background-color: var(--light-background-color-color);
+    border-top: 1px solid var(--border-color2);
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.section-images {
+    display: flex;
+    justify-content: center;
+}
+.section-images-img {
+    display: flex;
+    align-items: center;
+}
+
+.section-images-img img {
+    width: 80px;
+    margin-left: 80px;
+}
+
+.section-images-img img:nth-child(1) {
+    margin-left: 0;
+}
+
+/* --------------------------------------------------------------------- */
