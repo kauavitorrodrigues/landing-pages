@@ -141,29 +141,6 @@ nav .active a {
     margin-bottom: 40px;
 }
 
-.banner a,
-.button {
-    display: block;
-    text-align: center;
-
-    border: 0;
-    border-radius: 30px;
-    padding: 15px 40px 15px 40px;
-
-    background-color: var(--base-color);
-    color: var(--default-color);
-    font-size: .8em;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.banner a:hover,
-.button:hover {
-    background-color: var(--button-hover-color);
-    transition-duration: .5s;
-}
-
 .banner .sliders-pointers {
     width: 100%;
     height: 20px;
@@ -271,7 +248,7 @@ section.default {
     box-shadow: 0px 5px 10px #333;
 }
 
-.button {
+.section-about_us--left a {
     display: inline-block;
     margin-top: 20px;
 }
@@ -493,22 +470,6 @@ section.default.dark.bg-team {
     margin-top: 20px;
 }
 
-.section-team-social a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    border-radius: 13px;
-    background-color: var(--hover-color);
-}
-
-.section-team-social a:hover {
-    background-color: var(--base-color);
-    transition-duration: .5s;
-}
-
 /* --------------------------------------------------------------------- */
 
 /* -------------------------SECTION HAPPY CLIENTS----------------------------- */
@@ -719,23 +680,6 @@ section.default.dark.bg-team {
     background-color: var(--border-color);
 }
 
-.price-button{
-    margin-top: 25px;
-    padding: 20px 50px;
-    border-radius: 30px;
-
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--default-color);
-    background-color: var(--border-color);
-}
-
-.price-button:hover {
-    background-color: var(--base-color);
-    transition-duration: .5s;
-}
-
 /* --------------------------------------------------------------------- */
 
 /* -------------------------SECTION PREMIUM----------------------------- */
@@ -850,35 +794,6 @@ section.default.dark.bg-team {
 
 .section-premium .pointer.active {
     background-color: var(--base-color);
-}
-
-.button-area {
-    display: flex;
-    justify-content: center;
-}
-
-.premium-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.section-premium a {
-    border: 0;
-    border-radius: 30px;
-    padding: 15px 40px 15px 40px;
-    margin-top: 40px;
-
-    background-color: var(--base-color);
-    color: var(--default-color);
-    font-size: .8em;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.section-premium a:hover {
-    background-color: var(--button-hover-color);
-    transition-duration: .5s; 
 }
 
 /* --------------------------------------------------------------------- */
@@ -1060,27 +975,73 @@ fieldset {
     outline: 0;
 }
 
-.button-contact {
+/* --------------------------------------------------------------------- */
+
+/* ------------------------------BUTTONS-------------------------------- */
+
+.button-common, .button-contact input, .price-button {
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition-duration: .5s;
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+}
+
+.button-common, .button-contact input, .banner a, .button, .section-premium a {
+    background-color: var(--base-color);
+    color: var(--default-color);
+}
+
+.button-common:hover, .button-contact input:hover, .banner a:hover, .button:hover, .price-button:hover, .section-premium a:hover {
+    background-color: var(--button-hover-color);
+}
+
+.button-contact input, .price-button {
+    display: inline-block;
+}
+
+.button-contact input {
+    margin-top: 30px;
+}
+
+.premium-btn input {
+    margin-top: 40px;
+}
+
+.price-button {
+    padding: 20px 50px;
+    background-color: var(--border-color);
+    color: var(--default-color);
+}
+
+.banner a, .button {
+    display: inline-block;
+    text-align: center;
+}
+
+.button-area, .premium-btn, .button-contact {
     display: flex;
     justify-content: center;
 }
 
-.button-contact input {
-    border: 0;
-    border-radius: 30px;
-    padding: 15px 40px 15px 40px;
-    margin-top: 30px;
-
-    background-color: var(--base-color);
-    color: var(--default-color);
-    font-size: .8em;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
+.section-team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 13px;
+    background-color: var(--hover-color);
 }
 
-.button-contact input:hover {
-    background-color: var(--button-hover-color);
-    transition-duration: .5s; 
+.section-team-social a:hover {
+    background-color: var(--base-color);
+    transition-duration: .5s;
 }
