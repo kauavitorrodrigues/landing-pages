@@ -944,6 +944,8 @@ section.default.dark.bg-team {
 section.tell-about {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: var(--default-color);
+    border-bottom: 1px solid var(--hover-color);
 }
 
 .section-body.tell-about-area {
@@ -995,4 +997,90 @@ section.tell-about {
 .image-share p {
     color: var(--tittle-color);
     font-size: .6em;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION CONTACT US-------------------------- */
+
+.section-contact-us-area {
+    display: flex;
+    justify-content: center;
+}
+
+.section-contact-us-form {
+    width: 650px;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+}
+
+.name,
+.email,
+.subject,
+.message {
+    display: flex;
+    flex-direction: column;    
+}
+
+.name {
+    margin-right: 20px;
+}
+
+.name, .email{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.subject {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.subject, .message {
+    width: 100%;
+}
+
+.section-contact-us-form label {
+    color: var(--tittle-color);    
+    font-size: .8em;
+    padding: 10px;
+}
+
+.section-contact-us-form input {
+    border: 0;
+    border-bottom: 2px solid var(--tittle-color);
+    background-color: transparent;
+}
+
+.section-contact-us-form input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.button-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.button-contact input {
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 40px 15px 40px;
+    margin-top: 30px;
+
+    background-color: var(--base-color);
+    color: var(--default-color);
+    font-size: .8em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-contact input:hover {
+    background-color: var(--button-hover-color);
+    transition-duration: .5s; 
 }
