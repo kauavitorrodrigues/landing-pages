@@ -977,6 +977,55 @@ fieldset {
 
 /* --------------------------------------------------------------------- */
 
+/* ------------------------------SECTION MAP-------------------------------- */
+
+.section-map {
+    background: url('/assets/img/mapa.jpg') center/cover;;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-map-area {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.section-map-info-item {
+    display: flex;
+    align-items: center;
+    color: var(--tittle-color);
+    margin-bottom: 10px;
+}
+
+
+.section-map-info {
+    height: 50%;
+    width: 50%;
+    padding: 30px;
+    background-color: var(--default-color);
+}
+
+.section-map-info-item-img {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background-color: var(--tittle-color);
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.section-map-info-item-img img {
+    width: 17px;
+    height: auto;
+}
+
+/* --------------------------------------------------------------------- */
+
 /* ------------------------------BUTTONS-------------------------------- */
 
 .button-common, .button-contact input, .price-button {
