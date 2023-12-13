@@ -740,13 +740,103 @@ section.default.dark.bg-team {
 
 /* -------------------------SECTION PREMIUM----------------------------- */
 
-.section-premium .sliders-pointers {
-    width: 100%;
-    height: 20px;
+.bg-premium {
+    background-color: var(--default-color);
+}
 
+.section-premium {
+    overflow: hidden;
+    max-width: 3420px;
+    margin: auto;
+}
+
+.section-premium .sliders {
+    width: 3420px;
+    height: 100%;
+    display: flex;
+}
+
+.section-premium .slide {
+    width: 1140px;
+    height: 100%;
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.section-premium .slide-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.premium-product-image {
+    margin-right: 60px;
+}
+
+.premium-product-image img {
+    width: 350px;
+}
+
+.premium-item {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.premium-item-image {
+    margin-right: 25px;
+}
+
+.premium-feature {
+    max-width: 500px;
+}
+
+.feature-desc {
+    margin-bottom: 10px;
+}
+
+.feature-desc h5 {
+    font-size: 1.2em;
+    color: var(--default-color-2);
+    margin-bottom: 10px;
+}
+
+.feature-desc p {
+    font-size: .9em;
+    color: var(--tittle-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.feature-list ul {
+    margin-bottom: 10px;
+}
+
+.feature-list li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+    color: var(--tittle-color);
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.feature-list li::before {
+    content: "";
+    height: 1px;
+    width: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: var(--tittle-color);
+}
+
+.section-premium .sliders-pointers {
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
 }
 
 .section-premium .pointer {
@@ -760,4 +850,33 @@ section.default.dark.bg-team {
 
 .section-premium .pointer.active {
     background-color: var(--base-color);
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+
+.premium-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.section-premium a {
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 40px 15px 40px;
+    margin-top: 40px;
+
+    background-color: var(--base-color);
+    color: var(--default-color);
+    font-size: .8em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.section-premium a:hover {
+    background-color: var(--button-hover-color);
+    transition-duration: .5s; 
 }
