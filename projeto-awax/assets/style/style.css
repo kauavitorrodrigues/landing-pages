@@ -880,3 +880,59 @@ section.default.dark.bg-team {
     background-color: var(--button-hover-color);
     transition-duration: .5s; 
 }
+
+/* --------------------------------------------------------------------- */
+
+/* -------------------------SECTION SOME FACTS-------------------------- */
+
+.section-some-facts {
+    display: flex;
+}
+
+.section-some-facts {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-fact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fact-data {
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fact-data h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: var(--base-color);
+}
+
+.fact-data h4 {
+    font-size: 1.1em;
+    max-width: 174px;
+}
+
+.section-fact-line {
+    width:20px;
+    border-bottom:3px solid var(--tittle-color);
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+.fact-desc {
+    margin-top: 30px;
+}
+
+.fact-desc p {
+    font-size: .9em;
+    color: var(--border-color2);
+}
