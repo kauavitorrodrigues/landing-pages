@@ -65,6 +65,10 @@ header {
     justify-content: flex-end;
 }
 
+.menu-open {
+    display: none;
+}
+
 nav ul,
 nav ul li {
     display: flex;
@@ -610,16 +614,6 @@ section.default.dark.bg-team {
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 30px -22px var(--border-color);
-}
-
-.section-prices-card:hover {
-    transform: scale(1.1);
-    transition-duration: .5s;
-    box-shadow: 0px 10px 35px -22px var(--border-color);
-}
-
-.section-prices-card:nth-child(1) {
-    margin: 0;
 }
 
 .section-prices-card-info {
