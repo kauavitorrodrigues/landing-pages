@@ -970,7 +970,7 @@ fieldset {
     background-color: transparent;
 }
 
-.section-contact-us-form input:focus {
+.section-contact-us-form input:focus, .footer-subscribe input {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
@@ -1093,4 +1093,60 @@ fieldset {
 .section-team-social a:hover {
     background-color: var(--base-color);
     transition-duration: .5s;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* ------------------------------FOOTER-------------------------------- */
+
+.footer-area {
+    display: flex;
+}
+
+.footer-social,
+.footer-text,
+.footer-subscribe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.footer-social {
+    justify-content: space-between;
+}
+
+.footer-social p {
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.footer-social-icons img {
+    margin-right: 5px;
+}
+
+.footer-text p {
+    font-size: .7em;
+    color: var(--tittle-color);
+}
+
+.footer-subscribe {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--border-color);
+    margin-right: 0px;
+}
+
+.footer-subscribe label {
+    margin-top: 30px;
+    font-size: .8em;
+    color: var(--hover-color);
+}
+.footer-subscribe input {
+    border: 0;
+    width: 60%;
+    margin-top: 5px;
+    color: var(--hover-color);
+    background-color: transparent;
+    border-bottom: 1px solid var(--hover-color);
 }
