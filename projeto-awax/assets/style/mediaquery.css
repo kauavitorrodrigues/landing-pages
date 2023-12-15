@@ -215,3 +215,247 @@ Telas grandes: @media screen and (min-width: 1200px)
     }
 
 }
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .menu-open {
+        width: 40px;
+        margin-right: 30px;
+        display: block;
+    }
+
+    nav {
+        display: none;
+        height: calc(100vh - 100px);
+        width: 70vw;
+        z-index: 99;
+        right: 0;
+        top: 100px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 1em;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    nav ul li a:hover, nav .active a {
+        color: var(--base-color);
+        transition-duration: .5s;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .section-about_us {
+        flex-direction: column;
+    }
+    
+    .section-about_us--left {
+        margin: 0px 30px 30px 30px;
+    }
+
+    .section-about_us--right {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-about_us--right img {
+        width: 60%;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .section-service:nth-child(1) {
+        border-left: 0;
+    }
+
+    .section-project-filters {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-project-photo {
+        width: 320px;
+    }
+
+    .section-projects-photo-area {
+        width: 300px;
+        height: 190px;
+    }
+
+    .section-team {
+        max-width: 280px;
+    }
+
+    .section-happy-clients {
+        max-width: 600px;
+    }
+
+    .section-happy-clients .sliders {
+        width: 2100px;
+    }
+
+    .section-happy-clients .slide {
+        width: 600px;
+    }
+
+    .section-images-img img {
+        width: 50px;
+        margin-left: 30px;
+    }
+
+    .section-prices-cards {
+        flex-direction: column;
+    }
+
+    .section-prices-card {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-premium {
+        max-width: 600px;
+    }
+
+    .section-premium .sliders {
+        width: 1500px;
+    }
+
+    .section-premium .slide {
+        width: 490px;
+    }
+
+    .premium-item {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .section-premium .slide-area {
+        flex-direction: column;
+    }
+
+    .premium-product-image {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 310px;
+    }
+
+    .section-some-facts {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .tell-about-share {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .section-tell-about {
+        max-width: 670px;
+        flex-direction: column;
+    }
+
+    .share-about-social-images,
+    .share-about-social-images .image-share:nth-child(5) {
+        margin: 0;
+    }
+
+    .image-share img {
+        margin-right: 5px;
+    }
+
+    .image-share {
+        margin-right: 15px;
+    }
+
+    .section-map-area {
+        width: auto;
+    }
+
+    .section-map {
+        padding: 0;
+        padding-bottom: 250px;
+    }
+
+    .section-map-info {
+        width: auto;
+    }
+
+    .section-map-info-item {
+        margin-bottom: 20px;
+    }
+
+    .section-map-info-item p {
+        font-size: .9em;
+    }
+
+    .section-map-info-item:nth-child(5) {
+        margin-bottom: 0;
+    }
+
+    .footer-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-social,
+    .footer-text {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .footer-social {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social-icons {
+        margin-bottom: 10px
+    }
+
+    .footer-text {
+        margin: 0;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .footer-text p {
+        font-size: .9em;
+    }
+
+    .footer-subscribe {
+        width: 70%;
+    }
+
+}
