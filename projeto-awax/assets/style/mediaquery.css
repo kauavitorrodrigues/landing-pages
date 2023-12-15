@@ -6,7 +6,7 @@ Desktop: @media screen and (min-width: 992px and (max-width: 1200px)
 Telas grandes: @media screen and (min-width: 1200px)
 */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1100px) {
     
     .section-prices-card:hover {
         transform: scale(1.1);
@@ -20,7 +20,7 @@ Telas grandes: @media screen and (min-width: 1200px)
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
 
     .logo {
         margin-left: 40px;
@@ -90,8 +90,16 @@ Telas grandes: @media screen and (min-width: 1200px)
         max-width: 580px;
     }
 
+    .section-happy-clients {
+        max-width: 600px;
+    }
+
+    .section-happy-clients .sliders {
+        width: 2100px;
+    }
+
     .section-happy-clients .slide {
-        width: 100vw;
+        width: 600px;
     }
 
     .section-images-img img {
@@ -106,6 +114,28 @@ Telas grandes: @media screen and (min-width: 1200px)
     .section-prices-card {
         margin-left: 0;
         margin-bottom: 20px;
+    }
+
+    .section-premium {
+        max-width: 600px;
+    }
+
+    .section-premium .sliders {
+        width: 2100px;
+    }
+
+    .section-premium .slide {
+        width: 600px;
+    }
+
+    .section-premium .slide-area {
+        flex-direction: column;
+    }
+
+    .premium-product-image {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 310px;
     }
 
     .section-some-facts {
