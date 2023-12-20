@@ -20,7 +20,7 @@ Telas grandes: @media screen and (min-width: 1200px)
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
 
     .logo {
         margin-left: 40px;
@@ -216,7 +216,7 @@ Telas grandes: @media screen and (min-width: 1200px)
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
 
     .logo {
         margin-left: 40px;
@@ -315,20 +315,20 @@ Telas grandes: @media screen and (min-width: 1200px)
     }
 
     .section-happy-clients {
-        max-width: 600px;
+        max-width: 300px;
     }
 
     .section-happy-clients .sliders {
-        width: 2100px;
+        width: 1100px;
     }
 
     .section-happy-clients .slide {
-        width: 600px;
+        width: 300px;
     }
 
     .section-images-img img {
         width: 50px;
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .section-prices-cards {
@@ -341,15 +341,15 @@ Telas grandes: @media screen and (min-width: 1200px)
     }
 
     .section-premium {
-        max-width: 600px;
+        max-width: 300px;
     }
 
     .section-premium .sliders {
-        width: 1500px;
+        width: 900px;
     }
 
     .section-premium .slide {
-        width: 490px;
+        width: 320px;
     }
 
     .premium-item {
@@ -364,7 +364,16 @@ Telas grandes: @media screen and (min-width: 1200px)
     .premium-product-image {
         margin: 0;
         margin-bottom: 30px;
-        width: 310px;
+        width: 290px;
+    }
+
+    .premium-product-image img {
+        width: 290px;
+        margin-left: 11px;
+    }
+
+    .fact-desc {
+        padding: 5px;
     }
 
     .section-some-facts {
@@ -375,8 +384,16 @@ Telas grandes: @media screen and (min-width: 1200px)
     }
 
     .tell-about-share {
-        margin: 0;
-        margin-bottom: 10px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .tell-about-share img {
+        display: none;
+    }
+
+    .tell-about-share p {
+        margin-left: 0px;
     }
 
     .section-tell-about {
@@ -390,11 +407,34 @@ Telas grandes: @media screen and (min-width: 1200px)
     }
 
     .image-share img {
-        margin-right: 5px;
+        margin-right: 0px;
     }
 
     .image-share {
         margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-contact-us-form fieldset {
+        flex-direction: column;
+    }
+
+    .section-contact-us-form {
+        margin: 0px 25px 0px 25px;
+    }
+
+    .subject {
+        margin: 0;
+    }
+
+    .name {
+        margin-left: 0;
+    }
+
+    .name, .email, .subject, .message {
+        width: 100%;
+        margin-top: 30px;
     }
 
     .section-map-area {
