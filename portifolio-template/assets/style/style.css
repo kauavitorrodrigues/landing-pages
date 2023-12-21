@@ -18,6 +18,10 @@
     font-family: var(--default-font);
 }
 
+footer, header {
+    padding: 60px;
+} 
+
 /*------------------------------------*/
 
 /*--------------HEADER----------------*/
@@ -31,8 +35,6 @@ header {
     left: 0;
     right: 0;
     top: 0;
-
-    padding: 20px;
 }
 
 header .logo {
@@ -63,8 +65,8 @@ section.container {
     height: 100vh;
 }
 
-section.container .info {
-    padding: 0px 20px;
+section .left-side {
+    padding: 0px 60px;
 }
 
 section.container .left-side {
@@ -124,7 +126,7 @@ section.container .left-side .name p {
 
 section.container .right-side {
     flex: 1;
-    background: url(/assets/img/hero.jpg) center/cover no-repeat;
+    background: url(/assets/img/hero.jpg) top/cover no-repeat;
 }
 
 
@@ -137,6 +139,9 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+
+    font-size: .9em;
+    color: var(--principal-color);
 }
 
 /*------------------------------------*/
