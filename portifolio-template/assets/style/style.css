@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 :root {
-    --principal-color: #3b566d;
+    --principal-color: #fff;
+    --secondary-color: #3b566d;
     --menu-line-color: #333;
     --default-font: 'Montserrat', sans-serif;;
 }
@@ -22,10 +23,16 @@
 /*--------------HEADER----------------*/
 
 header {
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    padding: 20px;
 }
 
 header .logo {
@@ -43,7 +50,35 @@ header .menu {
 
 header .menu-line {
     background-color: var(--menu-line-color);
-    height: 3px;
+    height: 4px;
+}
+
+/*------------------------------------*/
+
+/*--------------SECTION----------------*/
+
+section.container {
+    display: flex;
+    height: 100vh;
+}
+
+section.container .left-side {
+    flex: 1;
+}
+
+section.container .right-side {
+    flex: 1;
+}
+
+/*------------------------------------*/
+
+/*--------------FOOTER----------------*/
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /*------------------------------------*/
