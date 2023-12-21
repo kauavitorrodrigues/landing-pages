@@ -38,6 +38,7 @@ header {
 header .logo {
     font-size: 2.5em;
     font-weight: 900;
+    color: var(--principal-color);
 }
 
 header .menu {
@@ -62,13 +63,70 @@ section.container {
     height: 100vh;
 }
 
+section.container .info {
+    padding: 0px 20px;
+}
+
 section.container .left-side {
     flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+section.container .left-side .info p, a {
+    color: var(--principal-color);
+}
+
+section.container .left-side .info a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: var(--secondary-color);
+    background-color: var(--principal-color);
+    box-shadow: 0px 0px 7px var(--menu-line-color);
+}
+
+section.container .left-side .info a.light {
+    margin-left: 10px;
+    color: var(--principal-color);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 10px var(--menu-line-color);
+}
+
+section.container .left-side .info a:hover{
+    text-decoration: underline;
+    transition-duration: .3s;
+    opacity: 0.7;
+}
+
+section.container .left-side .role p,
+section.container .left-side .name p {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section.container .left-side .role p {
+    font-size: 1.2em;
+}
+
+section.container .left-side .name p {
+    font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 section.container .right-side {
     flex: 1;
+    background: url(/assets/img/hero.jpg) center/cover no-repeat;
 }
+
 
 /*------------------------------------*/
 
